@@ -5,7 +5,6 @@ import requests
 
 '''
 # UK Road Safety Model front
-
 This front queries the [UK Road Safety model API](http://localhost:8000/predict)
 '''
 
