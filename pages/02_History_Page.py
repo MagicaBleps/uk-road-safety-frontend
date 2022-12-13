@@ -9,7 +9,7 @@ import numpy as np
 
 
 '''
-This front queries the [UK Road Safety model API](http://localhost:8000/get_past_data)
+This front queries the [UK Road Safety model API](http://localhost:8000/show_map)
 '''
 
 with st.form(key='params_for_api'):
@@ -22,15 +22,8 @@ with st.form(key='params_for_api'):
 params = dict(
     year=option)
 
-#api_url = 'http://localhost:8000/get_past_data'
-#response = requests.get(api_url, params=params)
-#prediction = response.json()
-
-#########################################
-# Display map from json responses
-#########################################
-
-HtmlFile = open("2010.html", 'r', encoding='utf-8')
-source_code = HtmlFile.read()
+api_url = 'http://localhost:8000/show_map'
+response = requests.get(api_url, params=params)
+source_code = response.text
 print(source_code)
 components.html(source_code,height=600)
