@@ -11,7 +11,7 @@ import numpy as np
 
 '''
 # UK Road Safety Predictions
-This front queries the [UK Road Safety model API](http://localhost:8000/predict)
+This front queries the [UK Road Safety model API](https://ukroadsafety-6ltey62awq-ew.a.run.app/predict)
 
 We created a prediction model for the first 6 months of 2022, based on the historical data.
 The model is based on a Recurrent Neural Network and is focused on the 4 UK districts where accidents were more frequent in 2021.
@@ -37,15 +37,15 @@ with st.form(key='params_for_api'):
 params = dict(
     hash=option)
 
-api_url = 'http://localhost:8000/predict'
+api_url = 'https://ukroadsafety-6ltey62awq-ew.a.run.app/predict'
 response = requests.get(api_url, params=params)
-#prediction = response.json()
-#print(prediction)
+prediction = response.json()
+print(prediction)
 #pred = prediction['y_pred']
 
 st.header(f'Predictions for 2022: ')
 
-prediction={'1_January':1,'2_February':4,'3_March':2,'4_April':2,'5_May':1,'6_June':0}
+#prediction={'1_January':1,'2_February':4,'3_March':2,'4_April':2,'5_May':1,'6_June':0}
 
 chart_data = pd.DataFrame.from_dict(prediction,orient='index')
 chart_data.columns=['Predicted Accidents']
