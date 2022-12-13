@@ -58,6 +58,12 @@ st.image(image)
 with st.expander('Click to see explanation'):
     st.markdown('<p style="font-size: 21px;">If we divide the day in five main hour windows, we can see that the afternoon rush window is the one where most accidents happen.</p>',unsafe_allow_html=True)
 
+image = Image.open('shares.png')
+st.image(image)
+
+with st.expander('Click to see explanation'):
+    st.markdown('<p style="font-size: 21px;">By plotting the percentage of accident severity for the different time windows, we see that most fatal accidents happen at night.</p>',unsafe_allow_html=True)
+
 
 par2='<p style="font-size: 21px;">We tried to forecast the monthly accident rate in the whole UK with a Time Series Machine Learning model called <b>ARIMA</b> (Auto Regressive Integrated Moving Average).<br /></p>'
 
