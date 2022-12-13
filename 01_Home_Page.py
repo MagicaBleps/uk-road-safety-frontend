@@ -14,16 +14,16 @@ st.set_page_config(layout="wide")
 # UK Road Safety Analysis
 #### Data Source :
 https://www.gov.uk/government/collections/road-accidents-and-safety-statistics
+'''
 
-Every year the UK government publishes the list of all recorded road accidents, each marked by GPS coordinates and datetime, as well as a lot of interesting information like the accident severity, the number of vehicles involved etc.
+text= st.text_area('''Every year the UK government publishes the list of all recorded road accidents, each marked by GPS coordinates and datetime, as well as a lot of interesting information like the accident severity, the number of vehicles involved etc.
 
 For the purpose of this project, we focused on the geospatial and temporal aspects of the dataset, but the possiibilities of meaningful analyses are countless.
 
 In this page we report some of the main findings of our analysis.
 
-In the picture below is reported the yearly accidents rate. We note a consistent decrease since 1999. We also note a dip in the rate corresponding to 2020, the year of the COVID-19 pandemic.
+In the picture below is reported the yearly accidents rate. We note a consistent decrease since 1999. We also note a dip in the rate corresponding to 2020, the year of the COVID-19 pandemic.''')
 
-'''
 
 
 image = Image.open('Apy.png')

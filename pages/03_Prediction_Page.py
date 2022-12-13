@@ -39,18 +39,15 @@ params = dict(
 
 api_url = 'http://localhost:8000/predict'
 response = requests.get(api_url, params=params)
-prediction = response.json()
-print(prediction)
+#prediction = response.json()
+#print(prediction)
 #pred = prediction['y_pred']
 
 st.header(f'Predictions for 2022: ')
 
-#prediction={0:1,1:4,2:2,3:2,4:1,5:0,6:2,7:1,8:2,9:1}
-l=list(prediction.values())
-col1, col2, col3 = st.columns(3)
-col1.metric("January 2022", l[0])
-col2.metric("February 2022", l[1])
-col3.metric("March 2022", l[2])
-col1.metric("April 2022", l[3])
-col2.metric("May 2022", l[4])
-col3.metric("June 2022", l[5])
+prediction={'1_January':1,'2_February':4,'3_March':2,'4_April':2,'5_May':1,'6_June':0}
+
+chart_data = pd.DataFrame.from_dict(prediction,orient='index')
+chart_data.columns=['Predicted Accidents']
+
+st.line_chart(chart_data,use_container_width=True)
