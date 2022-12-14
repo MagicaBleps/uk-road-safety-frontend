@@ -37,7 +37,7 @@ with c2:
 
 
 image = Image.open('Lin.jpeg')
-c1.image(image,width=100)
+c1.image(image)
 
 with c1:
     st.text("Linnan Chen")
