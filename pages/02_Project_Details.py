@@ -33,10 +33,10 @@ st.markdown(par,unsafe_allow_html=True)
 https://www.gov.uk/government/collections/road-accidents-and-safety-statistics
 '''
 par='''<p style="font-size: 21px;">
-1. Using pygeohash to divide the UK territory into geospatial square “buckets” 🌏 <br>
-2. Compute the accidents rate for each bucket every month→ now we have a Time Series!  📉 <br>
-3. Train ARIMA that predicts the next month’s accident rate for each bucket 🧮 <br>
-4. Plot the predicted accident rate of selected bucket and a UK map as a heatmap: 🏆 <br>
+1. Divide the UK territory into geospatial squares 🌏 <br>
+2. Compute the accidents rate for each square every month  📉 <br>
+3. Train a Machine Learning model that predicts the next months accident rate for each square 🧮 <br>
+4. Plot the predicted accident rate of selected bucket on a UK map 🏆 <br>
 </p>'''
 
 
