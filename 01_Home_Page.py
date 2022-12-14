@@ -8,21 +8,8 @@ import streamlit.components.v1 as components
 st.set_page_config(layout="wide")
 
 
+par='<par style="font-size: 50px;"><b>Mapping Road Safety in the UK</b></par>'
+st.markdown(par,unsafe_allow_html=True)
 
-
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.write(' ')
-
-with col2:
-    '''
-    # Mapping Road Safety in the UK
-
-    '''
-    image = Image.open('road.jpeg')
-    st.image(image)
-
-with col3:
-    st.write(' ')
+image = Image.open('bus.jpeg')
+st.image(image,width=600)
