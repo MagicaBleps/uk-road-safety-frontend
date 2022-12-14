@@ -21,7 +21,7 @@ new_image = image.resize((10, 10))
 c1.image(image)
 
 with c1:
-    st.text("Eleonora Macagno")
+    st.markdown("<b>Eleonora Macagno</b>",unsafe_allow_html=True)
     st.text("🌐https://github.com/MagicaBleps")
     st.text("🌐http://www.linkedin.com/in/eleonora-mac")
 
@@ -31,7 +31,7 @@ image = Image.open('Jig.jpeg')
 c2.image(image)
 
 with c2:
-    st.markdown("<b>Jigisha Pawar</b>")
+    st.markdown("<b>Jigisha Pawar</b>",unsafe_allow_html=True)
     st.text("https://github.com/Jigisha-p")
     st.text("https://www.linkedin.com/in/jigisha-purohit-7b26a2205/")
 
@@ -40,7 +40,7 @@ image = Image.open('Lin.jpeg')
 c1.image(image)
 
 with c1:
-    st.text("Linnan Chen")
+    st.markdown("<b>Linnan Chen</b>",unsafe_allow_html=True)
     st.text("🌐https://github.com/leochen888")
     st.text("🌐https://www.linkedin.com/in/linnan-chen/")
 
@@ -48,20 +48,26 @@ image = Image.open('Mob.jpeg')
 c2.image(image)
 
 with c2:
-    st.text("Mobolurin Adekanmbi")
+    st.markdown("<b>Mobolurin Adekanmbi</b>",unsafe_allow_html=True)
     st.text("🌐https://github.com/Bolu-Adekanmbi")
     st.text("🌐https://www.linkedin.com/in/mobolurin-adekanmbi-8b8354243/")
 
 
-col1, col2, col3 = st.columns(3)
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 
-with col1:
-    st.write(' ')
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 
-with col2:
-    image = Image.open('t.jpeg')
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 
-    st.image(image)
 
-with col3:
-    st.write(' ')
+par='<center style="font-size: 120px;"><b>THANK YOU!</b></center>'
+st.markdown(par,unsafe_allow_html=True)

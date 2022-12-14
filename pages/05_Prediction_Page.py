@@ -7,17 +7,15 @@ import streamlit.components.v1 as components
 import pandas as pd
 import numpy as np
 
-
-
 '''
 # UK Road Safety Predictions
 This front queries the [UK Road Safety model API](https://ukroadsafety-6ltey62awq-ew.a.run.app/predict)
-
-We created a prediction model for the first 6 months of 2022, based on the historical data.
-The model is based on a Recurrent Neural Network and is focused on the 4 UK districts where accidents were more frequent in 2021.
-To define the 'districts' we used the [geohash encoding](https://en.wikipedia.org/wiki/Geohash) with precision equal to 6 digits, corresponding to areas approx. 1.22km x 0.61km wide.
-This model serves as a proof of concept for a possible extension to more geohashes in the future.
 '''
+
+with st.expander('Click to see explanation'):
+
+    par='We created a prediction model for the first 6 months of 2022, based on the historical data. The model is based on a Recurrent Neural Network and is focused on the 4 UK districts where accidents were more frequent in 2021. To define the districts we used the [geohash encoding](https://en.wikipedia.org/wiki/Geohash) with precision equal to 6 digits, corresponding to areas approx. 1.22km x 0.61km wide.</br>This model serves as a proof of concept for a possible extension to more geohashes in the future.'
+    st.markdown(par,unsafe_allow_html=True)
 
 HtmlFile = open("geohash.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read()
