@@ -50,4 +50,5 @@ st.header(f'Predictions for 2022: ')
 chart_data = pd.DataFrame.from_dict(prediction,orient='index')
 chart_data.columns=['Predicted Accidents']
 
-st.line_chart(chart_data,use_container_width=True)
+#st.line_chart(chart_data,use_container_width=True)
+st.bar_chart(chart_data,use_container_width=True)
