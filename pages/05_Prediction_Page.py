@@ -38,12 +38,12 @@ params = dict(
 api_url = 'https://ukroadsafety-6ltey62awq-ew.a.run.app/predict'
 response = requests.get(api_url, params=params)
 prediction = response.json()
-print(prediction)
+
 #pred = prediction['y_pred']
 
 st.header(f'Predictions for 2022: ')
 
-#prediction={'1_January':1,'2_February':4,'3_March':2,'4_April':2,'5_May':1,'6_June':0}
+
 
 chart_data = pd.DataFrame.from_dict(prediction,orient='index')
 chart_data.columns=['Predicted Accidents']
