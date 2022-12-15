@@ -15,8 +15,8 @@ This front queries the [UK Road Safety model API](https://ukroadsafety-6ltey62aw
 with st.form(key='params_for_api'):
 
     option = st.selectbox(
-    'Select a year:',
-    (2010,2011,2012,2013,2014))
+    'Select a year:',index=4,
+    options=(2017,2018,2019,2020,2021))
     st.form_submit_button('Get Data')
 
 params = dict(
