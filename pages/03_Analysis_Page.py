@@ -15,7 +15,7 @@ st.set_page_config(layout="wide")
 '''
 st.text("")
 st.text("")
-par='<p style="font-size: 21px;">Every year the UK government publishes the list of <b>all recorded road accidents</b>, each marked by GPS coordinates and datetime, as well as a lot of interesting information like the accident severity, the number of vehicles involved etc.<br /><br />For the purpose of this project, we focused on the <b>geospatial and temporal</b> aspects of the dataset.<br /><br />In this page we report some of the main findings of our analysis.<br /><br /></p>'
+par='<p style="font-size: 21px;">For the purpose of this project, we focused on the <b>temporal and geospatial</b> aspects of the dataset.<br />In this page we report some of the main findings of our analysis from the temporal point of view.<br /><br /></p>'
 
 st.markdown('#### 📊 Data Analysis')
 st.markdown(par,unsafe_allow_html=True)
