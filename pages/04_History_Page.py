@@ -11,7 +11,7 @@ import numpy as np
 '''
 This front queries the [UK Road Safety model API](https://ukroadsafety-6ltey62awq-ew.a.run.app/show_map)
 '''
-
+st.markdown('<p style="font-size: 15px;">The map takes a few seconds to load, be patient :)</p>',unsafe_allow_html=True)
 with st.form(key='params_for_api'):
 
     option = st.selectbox(
