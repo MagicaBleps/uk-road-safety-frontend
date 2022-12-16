@@ -32,7 +32,7 @@ st.text("")
 c1, c2 = st.columns((1, 1))
 
 image = Image.open('heatmap.png')
-c1.image(image,width=600)
+c1.image(image,width=400)
 
 with c1:
     with st.expander('Click to see explanation'):
