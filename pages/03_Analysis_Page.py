@@ -31,7 +31,7 @@ st.text("")
 
 c1, c2 = st.columns((1, 1))
 
-image = Image.open('heatmap.png')
+image = Image.open('weekdays.png')
 c1.image(image)
 
 with c1:
