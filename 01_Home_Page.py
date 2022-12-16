@@ -14,7 +14,7 @@ st.markdown(par,unsafe_allow_html=True)
 c1, c2 = st.columns((1, 1))
 
 image = Image.open('bus.jpeg')
-c1.image(image,width=600)
+c1.image(image)
 
 
 

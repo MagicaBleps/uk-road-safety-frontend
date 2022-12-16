@@ -57,7 +57,7 @@ st.image(image)
 with st.expander('Click to see explanation'):
     st.markdown('<p style="font-size: 21px;">If we divide the day in five main hour windows, we can see that the afternoon rush window is the one where most accidents happen.</p>',unsafe_allow_html=True)
 
-image = Image.open('shares.png')
+image = Image.open('shares.jpg')
 st.image(image)
 
 with st.expander('Click to see explanation'):
