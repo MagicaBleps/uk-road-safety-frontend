@@ -31,8 +31,8 @@ st.text("")
 
 c1, c2 = st.columns((1, 1))
 
-image = Image.open('weekdays.png')
-c1.image(image)
+image = Image.open('heatmap.png')
+c1.image(image,width=400)
 
 with c1:
     with st.expander('Click to see explanation'):
@@ -40,7 +40,7 @@ with c1:
 
 
 image = Image.open('time.png')
-c2.image(image)
+c2.image(image,width=371)
 
 with c2:
     with st.expander('Click to see explanation'):
